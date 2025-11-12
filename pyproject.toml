@@ -1,0 +1,22 @@
+[project]
+name = "smartvision-bot"
+version = "0.1.0"
+description = "An AI-powered Telegram bot for chat and image recognition"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "python-telegram-bot",
+    "python-dotenv",
+    "openai",
+    "pytest",
+    "ruff"
+]
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I"]
+ignore = ["E501"]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
