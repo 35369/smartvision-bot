@@ -1,31 +1,20 @@
 # SmartVision Telegram Bot 🤖
 
-SmartVision is an AI-powered Telegram bot built with **Python**, **OpenAI GPT-4**, and **python-telegram-bot**.  
-It can **chat naturally**, **analyze photos**, and runs 24/7 on a **Mikrus VPS server**.  
-
----
+SmartVision is an AI-powered Telegram bot that can:
+- Chat using OpenAI GPT models 🧠
+- Analyze photos and describe them using image recognition 📸
+- Run 24/7 on a mikr.us VPS server 🌐
 
 ## 🧩 Features
-- 🧠 Chat and photo analysis using OpenAI GPT-4o  
-- 💬 Telegram integration via `python-telegram-bot`  
-- 🔐 Secure environment management with `.env`  
-- 🧪 Tested with `pytest`  
-- 🧹 Code quality checked with `ruff`  
-- ⚙️ Dependency & environment management using `uv`  
-- ☁️ Deployed on Mikrus VPS (runs 24/7 using `nohup`)
+- Text and image understanding (GPT-4o)
+- Telegram integration via `python-telegram-bot`
+- Environment variables managed with `.env`
+- Linting with `ruff`
+- Testing with `pytest`
+- Dependencies managed with `uv`
 
----
-
-## ⚙️ Installation & Setup
+## 🚀 Run Instructions
 ```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/USERNAME/smartvision-bot.git
-cd smartvision-bot
-
-#  Create a .env file and add your keys
-TELEGRAM_TOKEN=your_telegram_token
-OPENAI_API_KEY=your_openai_api_key
-
-#  Run the bot
+uv init
+uv add python-telegram-bot python-dotenv openai pytest ruff
 python3 telegrambot.py
-# smartvision-bot
