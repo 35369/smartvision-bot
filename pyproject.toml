@@ -1,0 +1,27 @@
+[project]
+name = "smartvision-bot"
+version = "0.1.0"
+description = "A Telegram bot using OpenAI for text and photo analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "python-telegram-bot>=20.0",
+    "python-dotenv",
+    "openai",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "W", "C90"]
+ignore = []
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.1",
+    "ruff>=0.14.5",
+]

@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+
+# Environment variables (secrets)
+.env
+
+# VSCode settings
+.vscode/
+
+# Ruff cache
+.ruff_cache/
+
+# Uv build outputs
+build/
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
