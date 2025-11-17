@@ -4,8 +4,8 @@ from typing import Dict
 
 def load_env_vars() -> Dict[str, str]:
     """
-    Çevresel değişkenleri yükler ve sözlük olarak döner.
-    Testlerde monkeypatch ile kolayca sahte değer atanabilir.
+    Loads environment variables and returns them as a dictionary.
+    In tests, fake values can easily be injected using monkeypatch.
     """
     return {
         "TELEGRAM_TOKEN": os.getenv("TELEGRAM_TOKEN", ""),
@@ -15,9 +15,11 @@ def load_env_vars() -> Dict[str, str]:
 
 def analyze_photo_placeholder(photo_bytes: bytes) -> str:
     """
-    Fotoğraf analiz fonksiyonu.
-    Şimdilik boyuta göre sahte bir çıktı döner (pytest için ideal).
-    Daha sonra OpenAI Vision API entegre edilecek.
+    Photo analysis placeholder function.
+    For now, it returns a fake output based on file size (ideal for pytest).
+    OpenAI Vision API integration will be added later.
     """
     size = len(photo_bytes)
-    return f"Fotoğraf alındı (boyut: {size} bytes). Analiz daha sonra eklenecek."
+    return f"Photo received (size: {size} bytes). Analysis will be added later."
+
+
