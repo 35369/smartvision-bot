@@ -19,7 +19,7 @@ It can **chat naturally**, **analyze photos**, and runs 24/7 on a **Mikrus VPS s
 ## ⚙️ Installation & Setup
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/USERNAME/smartvision-bot.git
+git clone https://github.com/35369/smartvision-bot.git
 cd smartvision-bot
 
 # 2️⃣ Install dependencies (using uv)
