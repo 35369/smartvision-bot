@@ -12,7 +12,7 @@ It can chat naturally, analyze photos, and runs 24/7 on a Mikrus VPS server.
 ☁️ Deployed on Mikrus VPS (runs 24/7 using nohup)
 ⚙️ Installation & Setup
 #  Clone the repository
-git clone https://github.com/USERNAME/smartvision-bot.git
+git clone https://github.com/35369/smartvision-bot.git
 cd smartvision-bot
 
 
@@ -23,4 +23,5 @@ OPENAI_API_KEY=your_openai_api_key
 #  Run the bot
 python3 telegrambot.py
 # smartvision-bot
+
 
